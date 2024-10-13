@@ -5,9 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #6c63ff;
+  --secondary: #63ffbd;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -15,9 +17,10 @@
 }
 
 body {
+  background-image: url("../public/noise-bg.svg");
   color: var(--foreground);
-  background: var(--background);
-  font-family: 'Roboto Mono', monospace;
+  /* background: var(--background); */
+  font-family: "Roboto Mono", monospace;
 }
 
 @layer utilities {
