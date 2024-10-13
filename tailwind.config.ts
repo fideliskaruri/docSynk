@@ -8,9 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        dots: "url('./public/noise-bg.svg')"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+      },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+      },
+      animation: {
+        "blink-cursor": "blink 1s step-start infinite",
       },
     },
   },
